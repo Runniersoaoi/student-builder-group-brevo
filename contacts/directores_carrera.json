@@ -3,21 +3,24 @@
     "email": "mcamborda@continental.edu.pe",
     "attributes": {
       "NOMBRE_DIRECTOR": "Maria Gabriela Camborda Zamudio",
-      "FACULTAD": "Ingeniería de Sistemas e Informática"
+      "FACULTAD": "Ingeniería de Sistemas e Informática",
+      "SALUDO": "Estimada"
     }
   },
   {
     "email": "ccoaquira@continental.edu.pe",
     "attributes": {
       "NOMBRE_DIRECTOR": "Carlos Alberto Coaquira Rojo",
-      "FACULTAD": "Ingeniería Mecatrónica"
+      "FACULTAD": "Ingeniería Mecatrónica",
+      "SALUDO": "Estimado"
     }
   },
   {
     "email": "wrodriguez@continental.edu.pe",
     "attributes": {
       "NOMBRE_DIRECTOR": "William Rodriguez Giraldez",
-      "FACULTAD": "Ingeniería Empresarial"
+      "FACULTAD": "Ingeniería Empresarial",
+      "SALUDO": "Estimado"
     }
   }
 ]

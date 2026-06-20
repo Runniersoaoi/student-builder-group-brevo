@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const contactsDir = resolve(__dirname, "../contacts");
 
-const ATTRIBUTES = ["NOMBRE_DIRECTOR", "NOMBRE_CONTACTO", "NOMBRE_INGENIERO", "FACULTAD"];
+const ATTRIBUTES = ["NOMBRE_DIRECTOR", "NOMBRE_CONTACTO", "NOMBRE_INGENIERO", "FACULTAD", "SALUDO"];
 const FOLDER_NAME = "AWS Student Builder Group";
 const LISTS = ["directores_carrera", "wichay_uc", "continua_uc", "ingenieros_facultad", "test"];
 
