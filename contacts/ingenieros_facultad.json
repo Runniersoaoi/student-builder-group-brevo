@@ -1,0 +1,16 @@
+[
+  {
+    "email": "dgamarra@continental.edu.pe",
+    "attributes": {
+      "NOMBRE_INGENIERO": "Daniel Gamarra Moreno",
+      "FACULTAD": "Ingeniería de Sistemas e Informática"
+    }
+  },
+  {
+    "email": "gcondori@continental.edu.pe",
+    "attributes": {
+      "NOMBRE_INGENIERO": "Giancarlo Condori Torres",
+      "FACULTAD": "Ingeniería de Sistemas e Informática"
+    }
+  }
+]

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Student Builder Group – UC | Alianza Estratégica</title>
+  <!--
+    ============================================================
+    TEMPLATE 02: WICHAY UC – INCUBADORA
+    Compatible con: Brevo, MailerLite, Mailchimp
+
+    VARIABLES:
+      {{params.NOMBRE_CONTACTO}}   → Nombre del contacto en Wichay UC
+      {{params.FECHA_EVENTO}}      → Ej: viernes 30 de mayo de 2025
+      {{params.HORA_EVENTO}}       → Ej: 7:00 PM (hora Perú)
+      {{params.LINK_REGISTRO}}     → URL de registro al evento
+      {{params.LINK_REDES}}        → Link a redes sociales del grupo
+
+    EN BREVO: usar sintaxis {{params.NOMBRE_CONTACTO}}
+    ============================================================
+  -->
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background-color: #0f1117;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #e8eaf0;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #00bcd4; text-decoration: none; }
+  </style>
+</head>
+<body style="margin:0;padding:0;background-color:#0f1117;font-family:Arial,Helvetica,sans-serif;color:#e8eaf0;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0f1117;">
+  <tr>
+    <td align="center">
+      <table width="620" cellpadding="0" cellspacing="0" border="0" style="max-width:620px;width:100%;background-color:#0f1117;">
+
+        <!-- HEADER -->
+        <tr>
+          <td style="background-color:#151b2e;padding:0;">
+            <!-- Top bar -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:20px 32px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="44" valign="middle">
+                        <img src="data:image/png;base64,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AAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAIDGBBQCQmMACAEhMYAEAJCawAAASE1gAAIkJLACAxAQWAEBiAgsAILH/H/3T8t/WxAwvAAAAAElFTkSuQmCC" width="44" height="44" style="width:44px;height:44px;border-radius:8px;display:block;" alt="AWS SBG UC">
+                      </td>
+                      <td align="right" valign="middle" style="font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.12em;color:#bd10e0;font-weight:500;">
+                        APRENDE&nbsp;&nbsp;&nbsp;CONSTRUYE&nbsp;&nbsp;&nbsp;INNOVA
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Header content -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:40px 32px 48px;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="font-family:'Courier New',Courier,monospace;font-size:10px;letter-spacing:0.15em;color:#bd10e0;font-weight:500;text-transform:uppercase;padding-bottom:20px;">
+                        AWS Student Builder Group &nbsp;&middot;&nbsp; Universidad Continental
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size:38px;font-weight:700;line-height:1.05;color:#ffffff;letter-spacing:-0.02em;padding-bottom:8px;">
+                        Una alianza<br>para el<br><span style="color:#bd10e0;">ecosistema UC.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top:24px;">
+                        <div style="width:120px;height:8px;background:#00bcd4;border-radius:2px;"></div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+          <td style="padding:36px 32px;background-color:#0f1117;">
+
+            <!-- Alliance badge -->
+            <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;">
+              <tr>
+                <td style="background:rgba(189,16,224,0.12);border:1px solid rgba(189,16,224,0.3);border-radius:99px;padding:6px 14px;font-size:12px;font-family:'Courier New',Courier,monospace;color:#bd10e0;letter-spacing:0.08em;">
+                  &#9670; Propuesta de alianza estratégica
+                </td>
+              </tr>
+            </table>
+
+
+            <p style="font-size:16px;line-height:1.75;color:#c8ccd8;margin:0 0 20px;">
+              Estimado/a <strong style="color:#ffffff;font-weight:600;">{{params.NOMBRE_CONTACTO}}</strong>,
+            </p>
+            <p style="font-size:16px;line-height:1.75;color:#c8ccd8;margin:0 0 20px;">
+              Nos comunicamos desde el <strong style="color:#ffffff;font-weight:600;">AWS Student Builder Group – Universidad Continental</strong>, una comunidad oficial de Amazon Web Services que estamos lanzando este año en la UC, enfocada en Cloud, IA y desarrollo de software para estudiantes.
+            </p>
+            <p style="font-size:16px;line-height:1.75;color:#c8ccd8;margin:0 0 20px;">
+              Sabemos del trabajo que <strong style="color:#ffffff;font-weight:600;">Wichay UC</strong> hace apoyando el emprendimiento e innovación estudiantil, y creemos que nuestras iniciativas se complementan de manera natural. Nos gustaría explorar formas de colaborar y construir juntos un ecosistema más robusto para los estudiantes de la universidad.
+            </p>
+
+            <!-- SINERGIAS - 2 column table -->
+            <p style="font-family:'Courier New',Courier,monospace;font-size:10px;letter-spacing:0.15em;color:#00bcd4;text-transform:uppercase;margin:28px 0 14px;">// Posibles puntos de colaboración</p>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px;">
+              <tr>
+                <td width="50%" valign="top" style="padding-right:6px;padding-bottom:12px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a2035;border:1px solid rgba(189,16,224,0.2);border-radius:10px;">
+                    <tr>
+                      <td style="padding:18px 16px;">
+                        <p style="font-family:'Courier New',Courier,monospace;font-size:9px;letter-spacing:0.15em;color:#bd10e0;text-transform:uppercase;margin:0 0 8px;">01</p>
+                        <p style="font-size:14px;font-weight:600;color:#ffffff;margin:0 0 6px;">Difusión cruzada</p>
+                        <p style="font-size:12px;color:#7a80a0;line-height:1.5;margin:0;">Compartir eventos y convocatorias entre comunidades para ampliar el alcance</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="50%" valign="top" style="padding-left:6px;padding-bottom:12px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a2035;border:1px solid rgba(189,16,224,0.2);border-radius:10px;">
+                    <tr>
+                      <td style="padding:18px 16px;">
+                        <p style="font-family:'Courier New',Courier,monospace;font-size:9px;letter-spacing:0.15em;color:#bd10e0;text-transform:uppercase;margin:0 0 8px;">02</p>
+                        <p style="font-size:14px;font-weight:600;color:#ffffff;margin:0 0 6px;">Proyectos con tech stack AWS</p>
+                        <p style="font-size:12px;color:#7a80a0;line-height:1.5;margin:0;">Startups de Wichay pueden acceder a mentoría técnica cloud a través de nuestra comunidad</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td width="50%" valign="top" style="padding-right:6px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a2035;border:1px solid rgba(189,16,224,0.2);border-radius:10px;">
+                    <tr>
+                      <td style="padding:18px 16px;">
+                        <p style="font-family:'Courier New',Courier,monospace;font-size:9px;letter-spacing:0.15em;color:#bd10e0;text-transform:uppercase;margin:0 0 8px;">03</p>
+                        <p style="font-size:14px;font-weight:600;color:#ffffff;margin:0 0 6px;">Talleres conjuntos</p>
+                        <p style="font-size:12px;color:#7a80a0;line-height:1.5;margin:0;">Co-organizar sesiones donde la tecnología se aplique a problemáticas de los emprendedores UC</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="50%" valign="top" style="padding-left:6px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a2035;border:1px solid rgba(189,16,224,0.2);border-radius:10px;">
+                    <tr>
+                      <td style="padding:18px 16px;">
+                        <p style="font-family:'Courier New',Courier,monospace;font-size:9px;letter-spacing:0.15em;color:#bd10e0;text-transform:uppercase;margin:0 0 8px;">04</p>
+                        <p style="font-size:14px;font-weight:600;color:#ffffff;margin:0 0 6px;">Red de speakers</p>
+                        <p style="font-size:12px;color:#7a80a0;line-height:1.5;margin:0;">Conectar a emprendedores con referentes del ecosistema AWS latinoamericano</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <p style="font-size:16px;line-height:1.75;color:#c8ccd8;margin:0 0 20px;">
+              Para empezar, nos gustaría pedirles su apoyo difundiendo nuestra <strong style="color:#ffffff;font-weight:600;">Sesión de Apertura</strong> entre la comunidad Wichay UC e invitando a quienes puedan sumarse a nuestra comunidad como miembros o colaboradores.
+            </p>
+
+            <!-- EVENT CARD -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a2035;border:1px solid rgba(0,188,212,0.2);border-radius:12px;margin:0 0 24px;">
+              <tr>
+                <td width="4" style="background:linear-gradient(180deg,#bd10e0,#00bcd4);border-radius:4px 0 0 4px;"></td>
+                <td style="padding:24px 28px;">
+                  <p style="font-size:11px;font-family:'Courier New',Courier,monospace;letter-spacing:0.15em;color:#bd10e0;text-transform:uppercase;margin:0 0 12px;">// Evento de lanzamiento</p>
+                  <p style="font-size:20px;font-weight:700;color:#ffffff;margin:0 0 14px;letter-spacing:-0.01em;">Sesión de Apertura<br>AWS Student Builder Group – UC</p>
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td width="20" valign="middle" style="padding-bottom:8px;">
+                        <div style="width:20px;height:20px;border-radius:4px;background:rgba(189,16,224,0.15);text-align:center;line-height:20px;">
+                          <svg viewBox="0 0 16 16" width="12" height="12" style="vertical-align:middle;"><path fill="#bd10e0" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1a6 6 0 1 1 0 12A6 6 0 0 1 8 2zm-.5 3v4l3.5 2-.5.87L7 10V5h.5z"/></svg>
+                        </div>
+                      </td>
+                      <td style="padding-left:10px;padding-bottom:8px;font-size:14px;color:#e0e3ed;">{{params.FECHA_EVENTO}} · {{params.HORA_EVENTO}}</td>
+                    </tr>
+                    <tr>
+                      <td width="20" valign="middle">
+                        <div style="width:20px;height:20px;border-radius:4px;background:rgba(189,16,224,0.15);text-align:center;line-height:20px;">
+                          <svg viewBox="0 0 16 16" width="12" height="12" style="vertical-align:middle;"><path fill="#bd10e0" d="M2 2h12v11H2V2zm1 1v9h10V3H3zm2 2h6v1H5V5zm0 2h6v1H5V7zm0 2h4v1H5V9z"/></svg>
+                        </div>
+                      </td>
+                      <td style="padding-left:10px;font-size:14px;color:#e0e3ed;">Evento virtual · Acceso gratuito</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!-- REQUEST LIST -->
+            <p style="font-family:'Courier New',Courier,monospace;font-size:10px;letter-spacing:0.15em;color:#00bcd4;text-transform:uppercase;margin:28px 0 14px;">// Lo que necesitamos de Wichay UC</p>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:28px;">
+              <tr>
+                <td width="6" valign="top" style="padding-top:8px;padding-bottom:10px;"><div style="width:6px;height:6px;border-radius:50%;background:#bd10e0;"></div></td>
+                <td style="padding-left:12px;padding-bottom:10px;font-size:15px;color:#c8ccd8;line-height:1.5;">Compartir el evento a través de sus canales y redes sociales</td>
+              </tr>
+              <tr>
+                <td width="6" valign="top" style="padding-top:8px;padding-bottom:10px;"><div style="width:6px;height:6px;border-radius:50%;background:#bd10e0;"></div></td>
+                <td style="padding-left:12px;padding-bottom:10px;font-size:15px;color:#c8ccd8;line-height:1.5;">Invitar a emprendedores y estudiantes UC a sumarse a la comunidad</td>
+              </tr>
+              <tr>
+                <td width="6" valign="top" style="padding-top:8px;"><div style="width:6px;height:6px;border-radius:50%;background:#bd10e0;"></div></td>
+                <td style="padding-left:12px;font-size:15px;color:#c8ccd8;line-height:1.5;">Explorar en una reunión cómo podemos colaborar de manera continua</td>
+              </tr>
+            </table>
+
+            <!-- CTA -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:32px 0;">
+              <tr>
+                <td align="center">
+                  <a href="{{params.LINK_REGISTRO}}" style="display:inline-block;background:#00bcd4;color:#0f1117;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;letter-spacing:0.06em;text-decoration:none;padding:14px 36px;border-radius:6px;text-transform:uppercase;">Ver el evento →</a>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding-top:10px;font-size:12px;color:#5c6278;font-family:'Courier New',Courier,monospace;">
+                  Registro gratuito · {{params.FECHA_EVENTO}}
+                </td>
+              </tr>
+            </table>
+
+            <p style="font-size:16px;line-height:1.75;color:#c8ccd8;margin:0 0 28px;">
+              Estamos convencidos de que juntos podemos generar mayor impacto en la comunidad universitaria. Quedamos atentos a su respuesta para coordinar los próximos pasos.
+            </p>
+
+            <!-- SIGNATURE -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid rgba(255,255,255,0.07);padding-top:24px;margin-top:8px;">
+              <tr>
+                <td style="padding-top:24px;">
+                  <p style="font-size:15px;font-weight:600;color:#ffffff;margin:0 0 2px;">AWS Student Builder Group – UC</p>
+                  <p style="font-size:12px;color:#5c6278;font-family:'Courier New',Courier,monospace;letter-spacing:0.05em;margin:0;">// Universidad Continental · Huancayo, Perú</p>
+                  <p style="font-size:12px;color:#5c6278;font-family:'Courier New',Courier,monospace;letter-spacing:0.05em;margin:4px 0 0;">// <a href="{{params.LINK_REDES}}" style="color:#00bcd4;text-decoration:none;">{{params.LINK_REDES}}</a></p>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td style="background:#bd10e0;padding:20px 32px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="font-size:12px;color:rgba(255,255,255,0.85);font-family:'Courier New',Courier,monospace;letter-spacing:0.04em;">
+                  AWS Student Builder Group · Universidad Continental
+                </td>
+                <td align="right" style="font-size:18px;font-weight:700;color:#ffffff;letter-spacing:-0.02em;">
+                  aws<span style="opacity:0.7;">sbg</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
