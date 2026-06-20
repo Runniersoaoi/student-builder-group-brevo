@@ -8,5 +8,15 @@
       "FACULTAD": "Ingeniería de Sistemas e Informática",
       "SALUDO": "Estimado"
     }
+  },
+  {
+    "email": "itzchezvil17@gmail.com",
+    "attributes": {
+      "NOMBRE_CONTACTO": "Cesar Atachao",
+      "NOMBRE_DIRECTOR": "Cesar Atachao",
+      "NOMBRE_INGENIERO": "Cesar Atachao",
+      "FACULTAD": "Ingeniería de Sistemas e Informática",
+      "SALUDO": "Estimado"
+    }
   }
 ]
